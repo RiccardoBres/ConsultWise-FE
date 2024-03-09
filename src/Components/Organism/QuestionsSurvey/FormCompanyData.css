@@ -1,0 +1,25 @@
+.container-question{
+   min-height: 100vh;
+   padding: 60px 10px;
+   height: auto;
+    
+}
+.container-question .col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-carousel-question{
+    min-height: 90vh;
+    padding-top: 5rem;
+    text-align: center;
+}
+@media(max-width:550px){
+    .container-carousel-question{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+        align-items: center;
+    }
+}

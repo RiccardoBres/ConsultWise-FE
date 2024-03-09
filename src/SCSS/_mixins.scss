@@ -1,0 +1,40 @@
+// _mixins.scss
+@mixin transition($args) {
+    transition: $args;
+}
+
+
+@mixin slide-in-from-left {
+    transform: translateX(-100%);
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    visibility: hidden; 
+  }
+  
+  @mixin slide-in-from-right {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    visibility: hidden; 
+  }
+  
+  @mixin activate-scroll-animation {
+    .animation-active & {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  
+
+@mixin fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+@mixin scale-up {
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}

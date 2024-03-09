@@ -1,0 +1,19 @@
+.container-hero{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-hero .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width: 551px){
+    .container-hero{
+        min-height: 100vh;
+    }
+    .container-hero .row{
+        gap: 2rem;
+    }
+}

@@ -1,0 +1,6 @@
+.container-signUp{
+    min-height: 90vh;
+    display: flex;
+    padding-bottom: 50px;
+    align-items: center;
+}

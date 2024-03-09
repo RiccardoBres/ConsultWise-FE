@@ -1,0 +1,29 @@
+.container-response {
+    margin: 2rem 0;
+    padding: 40px;
+    max-width: 1000px;
+    max-height: 70vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  .container-response::-webkit-scrollbar{
+    display: none;
+  }
+  .container-response h2{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .container-open-ai-response {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+@media(max-width:550px){
+  .container-open-ai-response h2{
+    text-align: center;
+  }
+}
+  

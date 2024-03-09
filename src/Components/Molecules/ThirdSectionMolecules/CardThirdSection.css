@@ -1,0 +1,17 @@
+.card-component{
+    margin: 10px;
+    text-align: center;
+    max-width: 450px;
+}
+.star-icon{
+    font-size: 24px;
+    color: #8094f8;
+}
+.card-container{
+    display: flex;
+}
+@media(max-width:550px){
+    .card-container{
+        flex-direction: column;
+    }
+}

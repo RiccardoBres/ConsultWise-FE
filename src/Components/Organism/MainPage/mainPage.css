@@ -1,0 +1,27 @@
+.container-main-dashboard{
+    min-height:100vh;
+}
+.container-main-intro-main{
+    text-align: center;
+    
+}
+.container-intro-home{
+    text-align: center;
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.icon-container svg{
+    font-size: 30px;
+}
+.col-card{
+    text-align: center;
+}
+@media(max-width:550px){
+    .container-main-dashboard{
+        padding-top: 3rem;
+    }
+}

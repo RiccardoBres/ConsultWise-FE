@@ -1,0 +1,33 @@
+/* .custom-button {
+    padding: 10px 20px;
+    background-color: var(--color-secondary);
+    border: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    font-family: var(--font-secondary);
+}
+
+.custom-textarea {
+    border: 1px solid var(--color-primary);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: auto;
+    min-width: 25rem;
+    min-height: 15rem;
+    border-radius: 10px;
+    padding: 10px;
+
+    &:focus {
+        outline: 2px solid var(--color-secondary); 
+    }
+}
+
+.custom-input {
+    border: 2px solid var(--color-primary);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: auto;
+    min-width: 5rem;
+    min-height: 2rem;
+    border-radius: 10px;
+    padding: 10px;
+}
+ */
