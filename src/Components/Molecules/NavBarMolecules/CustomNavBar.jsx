@@ -30,6 +30,7 @@ const CustomNavBar = () => {
     const handleLogin = () => { setShow(true) };
     const handleSignUp = () => { navigate('/sign-up') }
     const handleDashboard = () => { navigate('/main-dashboard') }
+    const handleAbout = () => { navigate('/about') }
 
     return (
         <>
@@ -43,7 +44,7 @@ const CustomNavBar = () => {
                         <Nav className="nav-links ml-auto">
                             <div className='container-links'>
                                 <Nav.Link href="/">Home</Nav.Link>
-                                <Nav.Link href="about">About us</Nav.Link>
+                                <Nav.Link onClick={handleAbout}>About us</Nav.Link>
                             </div>
                             <div className='container-nav-buttons'>
                                 {!session.isAuthenticated && <CustomParagraph text='Log in' className='medium-p login-button' onClick={handleLogin} />}
