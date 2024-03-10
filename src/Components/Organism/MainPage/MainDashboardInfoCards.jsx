@@ -21,12 +21,12 @@ const MainDashboardInfoCards = () => {
     }, []);
 
     useEffect(() => {
-        if (company.length > 0) {
+        if (company && company.length > 0) {
             if (company[0].consultResult == null) {
                 dispatch(getOpenAIResponse(company, company[0]._id));
             }
         }
-    }, []); 
+    }, [company]); 
     return (
         <>
             <div className="container-intro-home">
