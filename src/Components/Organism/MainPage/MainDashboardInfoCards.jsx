@@ -1,15 +1,32 @@
 // MainDashboardInfoCards.jsx
 
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Card, Row, Col } from 'react-bootstrap';
 import { FaMoneyBillWave, FaCog, FaUsers, FaChartPie } from 'react-icons/fa';
 import CustomTitle from '../../Atoms/CustomTitle';
 import { useSession } from '../../../Middleware/ProtectedRoutes';
+import { selectCompany, getCompany } from '../../../States/CompanyState';
+import { getOpenAIResponse } from '../../../States/OpenAiState';
 import CustomParagraph from '../../Atoms/CustomParagraph';
 import './mainPage.css';
 
 const MainDashboardInfoCards = () => {
     const session = useSession();
+    const dispatch = useDispatch();
+    const company = useSelector(selectCompany);
+
+     useEffect(() => {
+        dispatch(getCompany());
+    }, []);
+
+    useEffect(() => {
+        if (company.length > 0) {
+            if (company[0].consultResult == null) {
+                dispatch(getOpenAIResponse(company, company[0]._id));
+            }
+        }
+    }, []); 
     return (
         <>
             <div className="container-intro-home">

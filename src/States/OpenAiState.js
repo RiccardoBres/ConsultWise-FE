@@ -29,7 +29,7 @@ export const getOpenAIResponse = createAsyncThunk(
             const response = await openai.chat.completions.create({
                 model: 'gpt-3.5-turbo',
                 messages: [
-                    { role: 'system', content: 'You are a consultant helping businesses to grow and succeed. You should provide detailed advice based on the company data provided.' },
+                    { role: 'system', content: 'You are a consultant helping businesses to grow and succeed. You should provide detailed advice based on the company data provided and displayed in the best and most organized way possible' },
                     { role: 'user', content: companyString }
                 ]
             });
