@@ -26,8 +26,7 @@
     width: 100%!important;
   }
   .container-chart{
-    min-width: 50vh!important;
-    max-width: 50vh!important;
+    max-width: 45vh!important;
   }
   
 }

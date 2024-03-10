@@ -9,6 +9,8 @@ const ModalLogin = ({ show, handleLoginSuccess, onClose }) => {
   const navigate = useNavigate();
   const handleSignUp = () => {
     navigate('/sign-up');
+    console.log(process.env.REACT_APP_SERVER_BASE_URL);
+
   }
   return (
     <Modal show={show} onHide={onClose} className="modal-container">
