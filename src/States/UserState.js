@@ -14,7 +14,6 @@ export const getUser = createAsyncThunk(
             const response = await axios.get(`${process.env.REACT_APP_SERVER_BASE_URL}/user`);
             return response.data;
         } catch (error) {
-            console.log(error);
             throw error;
         }
     }
@@ -35,7 +34,6 @@ export const createUser = createAsyncThunk(
                     "Content-Type": "application/json"
                 }
             });
-            console.log(res);
             return res.data;
         } catch (error) {
             throw error;

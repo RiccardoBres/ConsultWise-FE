@@ -24,7 +24,6 @@ export const getCompany = createAsyncThunk(
             });
             return response.data;
         } catch (error) {
-            console.log(error);
             throw error;
         }
     }
@@ -47,7 +46,6 @@ export const createCompany = createAsyncThunk(
             navigate('/Question');
             return response.data;
         } catch (error) {
-            console.log(error);
             throw { status: error.response?.status, message: error.response?.data?.message || 'Error during company creation' };
         }
     }

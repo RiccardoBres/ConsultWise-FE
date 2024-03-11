@@ -15,7 +15,6 @@ export const sendApiRequest = async (endpoint, token, data) => {
         );
         return response.data;
     } catch (error) {
-        console.error(error);
         throw error;
     }
 };

@@ -20,7 +20,6 @@ export const loginUser = createAsyncThunk(
             localStorage.setItem('accessToken', JSON.stringify(token));
             return response.data;
         } catch (error) {
-            console.error("Error during login:", error.response?.data?.message || 'Errore durante il login');
             throw error;
         }
     }
@@ -31,10 +30,8 @@ export const logoutUser = createAsyncThunk(
         try {
             await axios.post(`${process.env.REACT_APP_SERVER_BASE_URL}/logout`);            
             localStorage.removeItem("accessToken");
-            console.log("User logged out");
             return true;
         } catch (error) {
-            console.error("Error during logout:", error.response?.data?.message || 'Errore durante il logout');
             throw error;
         }
     }
