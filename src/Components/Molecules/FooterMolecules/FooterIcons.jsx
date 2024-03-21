@@ -11,7 +11,7 @@ const FooterIcons = () => {
         <FaTwitter />
         <FaInstagram />
       </div>
-      <CustomParagraph text="© 2023 Developed & Designed | Riccardo Bresolin" className="medium-p m-0" />
+      <CustomParagraph text="© 2023 Riccardo Bresolin | All right reserved" className="medium-p m-0" />
     </div>
   );
 };

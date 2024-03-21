@@ -40,9 +40,3 @@ const FooterInformation = () => {
 };
 
 export default FooterInformation;
-{/* <div className="footer-information">
-      <CustomTitle text="Contact Us" className="medium-title my-1" />
-      <CustomParagraph text="Email: example@example.com" className="medium-p" />
-      <CustomParagraph text="Phone: +123 456 789" className="medium-p" />
-      <CustomParagraph text="© 2023 Developed & Designed | Riccardo Bresolin" className="medium-p" />
-    </div> */}
